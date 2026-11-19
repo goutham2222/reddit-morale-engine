@@ -1,0 +1,248 @@
+# ==============================================================================
+# Target Companies Configuration
+# ~30 Major Tech / Enterprise Firms, Aliases, Stock Tickers & False Positive Guards
+# ==============================================================================
+
+companies:
+  Amazon:
+    aliases: ["amazon", "aws", "amazon web services", "amazonian", "amazonians", "jassy", "andy jassy", "bezos", "jeff bezos"]
+    stock_tickers: ["amzn"]
+    subreddits: ["amazonemployees", "amazonsde", "amazonfc", "aws"]
+    negative_patterns:
+      - '(?i)\bamazon\s+(river|rainforest|basin|prime\s+video|echo|kindle\s+paperwhite)\b'
+      - '(?i)\bdelivered\s+by\s+amazon\b'
+    workplace_required_in_general_subs: true
+
+  Google:
+    aliases: ["google", "alphabet", "googler", "googlers", "deepmind", "sundar", "sundar pichai", "pichai", "youtube", "waymo"]
+    stock_tickers: ["goog", "googl"]
+    subreddits: ["google", "alphabet"]
+    negative_patterns:
+      - '(?i)\bjust\s+google\s+(it|this)\b'
+      - '(?i)\bgoogle\s+search\b'
+    workplace_required_in_general_subs: true
+
+  Meta:
+    aliases: ["meta", "facebook", "instagram", "whatsapp", "oculus", "zuck", "zuckerberg", "mark zuckerberg"]
+    stock_tickers: ["meta", "fb"]
+    subreddits: ["facebook", "metaverse"]
+    negative_patterns:
+      - '(?i)\b(monthly|weekly|daily)\s+meta[- ]thread\b'
+      - '(?i)\bmeta[- ]analysis\b'
+      - '(?i)\bmeta[- ]data\b'
+      - '(?i)\bthis\s+is\s+meta\b'
+    workplace_required_in_general_subs: true
+
+  Microsoft:
+    aliases: ["microsoft", "msft", "satya", "satya nadella", "nadella", "azure", "xbox", "github", "linkedin"]
+    stock_tickers: ["msft"]
+    subreddits: ["microsoft"]
+    negative_patterns:
+      - '(?i)\bmicrosoft\s+office\s+(download|license)\b'
+      - '(?i)\bxbox\s+(game\s+pass|controller|series\s+x)\b'
+    workplace_required_in_general_subs: true
+
+  Apple:
+    aliases: ["apple", "tim cook", "cupertino"]
+    stock_tickers: ["aapl"]
+    subreddits: ["apple"]
+    negative_patterns:
+      - '(?i)\b(apple\s+(pie|cider|fruit|tree|watch|vision\s+pro|pencil))\b'
+      - '(?i)\b(bought\s+an|iphone\s+1[1-7]|macbook\s+pro\s+screen)\b'
+    workplace_required_in_general_subs: true
+
+  Netflix:
+    aliases: ["netflix", "reed hastings", "ted sarandos", "sarandos", "greg peters"]
+    stock_tickers: ["nflx"]
+    subreddits: ["netflix"]
+    negative_patterns:
+      - '(?i)\b(watching\s+netflix|netflix\s+and\s+chill|cancelled\s+my\s+subscription)\b'
+    workplace_required_in_general_subs: true
+
+  Tesla:
+    aliases: ["tesla", "elon", "elon musk", "musk", "gigafactory", "tsla"]
+    stock_tickers: ["tsla"]
+    subreddits: ["teslamotors", "tesla"]
+    negative_patterns:
+      - '(?i)\b(model\s+[3sxy]|cybertruck\s+delivery|supercharger\s+broken)\b'
+    workplace_required_in_general_subs: true
+
+  Uber:
+    aliases: ["uber", "dara khosrowshahi", "khosrowshahi", "uber eats", "uber freight"]
+    stock_tickers: ["uber"]
+    subreddits: ["uber", "uberdrivers"]
+    negative_patterns:
+      - '(?i)\b(ordered\s+an\s+uber|uber\s+driver\s+late|surge\s+pricing)\b'
+    workplace_required_in_general_subs: true
+
+  IBM:
+    aliases: ["ibm", "arvind krishna", "krishna", "big blue", "red hat"]
+    stock_tickers: ["ibm"]
+    subreddits: ["ibm"]
+    negative_patterns: []
+    workplace_required_in_general_subs: false
+
+  Oracle:
+    aliases: ["oracle", "larry ellison", "safra catz", "oci", "oracle cloud"]
+    stock_tickers: ["orcl"]
+    subreddits: ["oracle"]
+    negative_patterns:
+      - '(?i)\boracle\s+database\s+error\b'
+    workplace_required_in_general_subs: false
+
+  Airbnb:
+    aliases: ["airbnb", "brian chesky", "chesky", "air bnb"]
+    stock_tickers: ["abnb"]
+    subreddits: ["airbnb", "airbnbhosts"]
+    negative_patterns:
+      - '(?i)\b(stayed\s+at\s+an\s+airbnb|host\s+cancelled|cleaning\s+fee)\b'
+    workplace_required_in_general_subs: true
+
+  Twitter:
+    aliases: ["twitter", "x corp", "parag agrawal", "linda yaccarino"]
+    stock_tickers: ["twtr"]
+    subreddits: ["twitter"]
+    negative_patterns:
+      - '(?i)\b(posted\s+on\s+twitter|tweeted|retweeted)\b'
+    workplace_required_in_general_subs: true
+
+  Salesforce:
+    aliases: ["salesforce", "marc benioff", "benioff", "slack", "tableau", "mulesoft"]
+    stock_tickers: ["crm"]
+    subreddits: ["salesforce"]
+    negative_patterns: []
+    workplace_required_in_general_subs: false
+
+  Intel:
+    aliases: ["intel", "pat gelsinger", "gelsinger", "intel foundry", "ifs"]
+    stock_tickers: ["intc"]
+    subreddits: ["intel"]
+    negative_patterns:
+      - '(?i)\bintel\s+(core\s+i[3579]|cpu\s+cooler|overclocking)\b'
+    workplace_required_in_general_subs: true
+
+  Cisco:
+    aliases: ["cisco", "chuck robbins", "webex", "meraki", "splunk"]
+    stock_tickers: ["csco"]
+    subreddits: ["cisco"]
+    negative_patterns:
+      - '(?i)\bcisco\s+(switch|router|packet\s+tracer|ccna)\b'
+    workplace_required_in_general_subs: true
+
+  SAP:
+    aliases: ["sap", "christian klein", "sap hana", "sap se"]
+    stock_tickers: ["sap"]
+    subreddits: ["sap"]
+    negative_patterns:
+      - '(?i)\bsap\s+(gui|tcode|basis|abap\s+syntax)\b'
+    workplace_required_in_general_subs: true
+
+  LinkedIn:
+    aliases: ["linkedin", "ryan roslansky", "roslansky"]
+    stock_tickers: []
+    subreddits: ["linkedin", "linkedinlunatics"]
+    negative_patterns:
+      - '(?i)\b(messaged\s+on\s+linkedin|my\s+linkedin\s+profile|linkedin\s+post)\b'
+    workplace_required_in_general_subs: true
+
+  Adobe:
+    aliases: ["adobe", "shantanu narayen", "narayen", "figma deal"]
+    stock_tickers: ["adbe"]
+    subreddits: ["adobe"]
+    negative_patterns:
+      - '(?i)\badobe\s+(photoshop|premiere|creative\s+cloud\s+subscription|acrobat)\b'
+    workplace_required_in_general_subs: true
+
+  Palantir:
+    aliases: ["palantir", "alex karp", "karp", "peter thiel", "foundry", "gotham", "apollo"]
+    stock_tickers: ["pltr"]
+    subreddits: ["palantir", "pltr"]
+    negative_patterns: []
+    workplace_required_in_general_subs: false
+
+  Dropbox:
+    aliases: ["dropbox", "drew houston"]
+    stock_tickers: ["dbx"]
+    subreddits: ["dropbox"]
+    negative_patterns:
+      - '(?i)\b(uploaded\s+to\s+dropbox|sync\s+folder\s+error)\b'
+    workplace_required_in_general_subs: true
+
+  NVIDIA:
+    aliases: ["nvidia", "jensen huang", "jensen", "huang", "geforce"]
+    stock_tickers: ["nvda"]
+    subreddits: ["nvidia"]
+    negative_patterns:
+      - '(?i)\b(rtx\s+40[789]0|graphics\s+card|driver\s+update|fps\s+drop)\b'
+    workplace_required_in_general_subs: true
+
+  AMD:
+    aliases: ["amd", "lisa su", "dr lisa su", "radeon", "ryzen", "epyc"]
+    stock_tickers: ["amd"]
+    subreddits: ["amd"]
+    negative_patterns:
+      - '(?i)\b(ryzen\s+[579]|radeon\s+rx|bios\s+update)\b'
+    workplace_required_in_general_subs: true
+
+  OpenAI:
+    aliases: ["openai", "sam altman", "altman", "chatgpt", "greg brockman", "mira murati", "ilya sutskever"]
+    stock_tickers: []
+    subreddits: ["openai", "chatgpt"]
+    negative_patterns:
+      - '(?i)\b(prompted\s+chatgpt|chatgpt\s+plus|generated\s+by\s+chatgpt)\b'
+    workplace_required_in_general_subs: true
+
+  ByteDance:
+    aliases: ["bytedance", "tiktok", "shou zi chew", "chew", "lemon8"]
+    stock_tickers: []
+    subreddits: ["tiktok"]
+    negative_patterns:
+      - '(?i)\b(watched\s+a\s+tiktok|tiktok\s+algorithm|scrolling\s+tiktok)\b'
+    workplace_required_in_general_subs: true
+
+  Shopify:
+    aliases: ["shopify", "tobi lutke", "lutke", "tobi lütke"]
+    stock_tickers: ["shop"]
+    subreddits: ["shopify"]
+    negative_patterns:
+      - '(?i)\b(dropshipping|store\s+theme|checkout\s+app)\b'
+    workplace_required_in_general_subs: true
+
+  Snowflake:
+    aliases: ["snowflake", "frank slootman", "slootman", "sridhar ramaswamy", "ramaswamy"]
+    stock_tickers: ["snow"]
+    subreddits: ["snowflake"]
+    negative_patterns:
+      - '(?i)\b(sql\s+query\s+timeout|warehouse\s+credit)\b'
+    workplace_required_in_general_subs: false
+
+  Databricks:
+    aliases: ["databricks", "ali ghodsi", "ghodsi", "spark", "delta lake"]
+    stock_tickers: []
+    subreddits: ["databricks"]
+    negative_patterns: []
+    workplace_required_in_general_subs: false
+
+  Stripe:
+    aliases: ["stripe", "patrick collison", "john collison", "collison"]
+    stock_tickers: []
+    subreddits: ["stripe"]
+    negative_patterns:
+      - '(?i)\b(chargeback|payment\s+gateway|account\s+restricted\s+payouts)\b'
+    workplace_required_in_general_subs: true
+
+  Square:
+    aliases: ["square", "block inc", "jack dorsey", "dorsey", "cash app"]
+    stock_tickers: ["sq", "xyz"]
+    subreddits: ["square"]
+    negative_patterns:
+      - '(?i)\b(pos\s+terminal|card\s+reader|sent\s+money\s+cash\s+app)\b'
+    workplace_required_in_general_subs: true
+
+  DoorDash:
+    aliases: ["doordash", "tony xu", "xu"]
+    stock_tickers: ["dash"]
+    subreddits: ["doordash", "doordash_drivers"]
+    negative_patterns:
+      - '(?i)\b(delivery\s+driver\s+late|tip\s+amount|food\s+was\s+cold)\b'
+    workplace_required_in_general_subs: true

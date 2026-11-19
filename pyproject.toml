@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reddit-morale-engine"
+version = "0.1.0"
+description = "End-to-end Reddit organizational culture, leadership sentiment, and employee morale analytics engine."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Orchestrator"}
+]
+dependencies = [
+    "pyarrow>=14.0.0",
+    "duckdb>=0.10.0",
+    "pandas>=2.0.0",
+    "pydantic>=2.5.0",
+    "pydantic-settings>=2.0.0",
+    "pandera>=0.18.0",
+    "vaderSentiment>=3.3.2",
+    "transformers>=4.35.0",
+    "torch>=2.0.0",
+    "sentence-transformers>=2.3.0",
+    "qdrant-client>=1.7.0",
+    "langchain>=0.1.0",
+    "langchain-community>=0.0.10",
+    "langchain-google-genai>=0.0.6",
+    "langgraph>=0.0.20",
+    "azure-storage-blob>=12.19.0",
+    "adlfs>=2023.12.0",
+    "praw>=7.7.1",
+    "streamlit>=1.30.0",
+    "plotly>=5.18.0",
+    "python-dotenv>=1.0.0",
+    "pyyaml>=6.0.1",
+    "tqdm>=4.66.0",
+    "tenacity>=8.2.3",
+    "httpx>=0.26.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov>=4.1.0",
+    "black>=24.1.0",
+    "ruff>=0.2.0",
+    "ipykernel>=6.29.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]

@@ -1,0 +1,104 @@
+# ==============================================================================
+# Leadership Controversies, Mandates & Event Study Windows (2015 - 2026)
+# ==============================================================================
+
+events:
+  amazon_tim_bray_resignation:
+    company: "Amazon"
+    anchor_month: "2020-05"
+    leader: "Jeff Bezos"
+    title: "Tim Bray Resignation & Warehouse Conditions"
+    description: "VP Tim Bray publicly resigns in protest over firing of warehouse whistleblowers, triggering viral employee culture discussion."
+    window_pre_months: 3
+    window_post_months: 3
+    core_themes: ["values_alignment_ethics", "psychological_safety", "leadership_management_quality"]
+
+  amazon_rto_initial_3days:
+    company: "Amazon"
+    anchor_month: "2023-02"
+    leader: "Andy Jassy"
+    title: "Initial 3-Day Return-to-Office Announcement"
+    description: "Andy Jassy mandates corporate employees return to office at least 3 days a week, sparking 30,000-signature employee petition."
+    window_pre_months: 3
+    window_post_months: 3
+    core_themes: ["remote_rto_policy", "autonomy_trust", "leadership_management_quality"]
+
+  amazon_jassy_ultimatum:
+    company: "Amazon"
+    anchor_month: "2023-08"
+    leader: "Andy Jassy"
+    title: "Jassy 'Disagree and Commit or Leave' Ultimatum"
+    description: "CEO Andy Jassy warns employees during an internal fishbowl meeting: 'If you can't disagree and commit... it's probably not going to work out for you'."
+    window_pre_months: 3
+    window_post_months: 3
+    core_themes: ["leadership_management_quality", "remote_rto_policy", "psychological_safety"]
+
+  amazon_rto_5days_announcement:
+    company: "Amazon"
+    anchor_month: "2024-09"
+    leader: "Andy Jassy"
+    title: "Strict 5-Day RTO & Manager Ratio Mandate"
+    description: "CEO announces full 5-day return to office effective January 2025 and requires a 15% increase in individual contributor to manager ratio."
+    window_pre_months: 3
+    window_post_months: 4
+    core_themes: ["remote_rto_policy", "micromanagement", "burnout_overtime_oncall"]
+
+  meta_layoffs_wave1:
+    company: "Meta"
+    anchor_month: "2022-11"
+    leader: "Mark Zuckerberg"
+    title: "Initial 11,000 Mass Layoff"
+    description: "Meta lays off 13% of its workforce (11,000 roles) following aggressive pandemic overhiring and metaverse investment losses."
+    window_pre_months: 3
+    window_post_months: 3
+    core_themes: ["career_progression_promotion", "leadership_management_quality", "burnout_overtime_oncall"]
+
+  meta_year_of_efficiency:
+    company: "Meta"
+    anchor_month: "2023-03"
+    leader: "Mark Zuckerberg"
+    title: "'Year of Efficiency' & Middle Management Cull"
+    description: "Zuckerberg cuts an additional 10,000 roles, cancels projects, and flattens management layers, changing review and rating expectations."
+    window_pre_months: 3
+    window_post_months: 3
+    core_themes: ["micromanagement", "career_progression_promotion", "autonomy_trust"]
+
+  twitter_musk_hardcore_ultimatum:
+    company: "Twitter"
+    anchor_month: "2022-11"
+    leader: "Elon Musk"
+    title: "Musk 'Extremely Hardcore' Ultimatum"
+    description: "Elon Musk issues midnight email ultimatum demanding employees commit to 'long hours at high intensity' or accept 3 months severance, leading to mass resignations."
+    window_pre_months: 2
+    window_post_months: 3
+    core_themes: ["burnout_overtime_oncall", "toxicity_bullying", "work_life_balance", "leadership_management_quality"]
+
+  google_layoffs_wave1:
+    company: "Google"
+    anchor_month: "2023-01"
+    leader: "Sundar Pichai"
+    title: "12,000 Employee Layoff Wave"
+    description: "Google eliminates 12,000 positions via overnight email access revocations, breaking long-standing 'lifetime employment' cultural perception."
+    window_pre_months: 3
+    window_post_months: 3
+    core_themes: ["psychological_safety", "values_alignment_ethics", "leadership_management_quality"]
+
+  google_gemini_controversy:
+    company: "Google"
+    anchor_month: "2024-02"
+    leader: "Sundar Pichai"
+    title: "Gemini Rollout Backlash & Leadership Critique"
+    description: "Public controversies over Gemini generation prompt widespread internal employee and public questioning of leadership direction and execution speed."
+    window_pre_months: 2
+    window_post_months: 3
+    core_themes: ["leadership_management_quality", "values_alignment_ethics", "communication_process"]
+
+  tesla_in_office_or_quit:
+    company: "Tesla"
+    anchor_month: "2022-06"
+    leader: "Elon Musk"
+    title: "Musk 'Pretend to Work Somewhere Else' Mandate"
+    description: "Musk sends company-wide email requiring a minimum of 40 hours per week in the office or resignation: 'They should pretend to work somewhere else'."
+    window_pre_months: 2
+    window_post_months: 3
+    core_themes: ["remote_rto_policy", "leadership_management_quality", "toxicity_bullying"]

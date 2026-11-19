@@ -1,0 +1,124 @@
+# ==============================================================================
+# Subreddit Taxonomy & Priors
+# Classifies subreddits by domain, workplace relevance prior, and context checks
+# ==============================================================================
+
+subreddits:
+  # --- Career & Workplace Focused (High Culture Prior: 1.0) ---
+  cscareerquestions:
+    category: "career_focused"
+    culture_prior: 1.0
+    require_company_mention: true
+    require_workplace_keywords: false
+
+  ExperiencedDevs:
+    category: "career_focused"
+    culture_prior: 1.0
+    require_company_mention: true
+    require_workplace_keywords: false
+
+  antiwork:
+    category: "labor_reform"
+    culture_prior: 0.9
+    require_company_mention: true
+    require_workplace_keywords: false
+
+  WorkReform:
+    category: "labor_reform"
+    culture_prior: 0.9
+    require_company_mention: true
+    require_workplace_keywords: false
+
+  jobs:
+    category: "career_focused"
+    culture_prior: 0.8
+    require_company_mention: true
+    require_workplace_keywords: false
+
+  AskEngineers:
+    category: "career_focused"
+    culture_prior: 0.8
+    require_company_mention: true
+    require_workplace_keywords: true
+
+  WomenInTech:
+    category: "career_focused"
+    culture_prior: 1.0
+    require_company_mention: true
+    require_workplace_keywords: false
+
+  Workplace:
+    category: "career_focused"
+    culture_prior: 0.9
+    require_company_mention: true
+    require_workplace_keywords: false
+
+  techjobs:
+    category: "career_focused"
+    culture_prior: 0.8
+    require_company_mention: true
+    require_workplace_keywords: false
+
+  overemployed:
+    category: "career_focused"
+    culture_prior: 0.8
+    require_company_mention: true
+    require_workplace_keywords: false
+
+  layoffs:
+    category: "labor_reform"
+    culture_prior: 1.0
+    require_company_mention: true
+    require_workplace_keywords: false
+
+  remotework:
+    category: "workplace_policy"
+    culture_prior: 0.9
+    require_company_mention: true
+    require_workplace_keywords: false
+
+  developersIndia:
+    category: "career_focused"
+    culture_prior: 0.8
+    require_company_mention: true
+    require_workplace_keywords: false
+
+  # --- Company-Specific Subreddits (Direct Corporate Prior) ---
+  amazonemployees:
+    category: "company_internal"
+    culture_prior: 1.0
+    default_company: "Amazon"
+    require_company_mention: false
+    require_workplace_keywords: false
+
+  amazonsde:
+    category: "company_internal"
+    culture_prior: 1.0
+    default_company: "Amazon"
+    require_company_mention: false
+    require_workplace_keywords: false
+
+  # --- General / Consumer Tech Subreddits (Require Stricter Context) ---
+  technology:
+    category: "general_tech"
+    culture_prior: 0.4
+    require_company_mention: true
+    require_workplace_keywords: true
+
+  programming:
+    category: "general_tech"
+    culture_prior: 0.5
+    require_company_mention: true
+    require_workplace_keywords: true
+
+  investing:
+    category: "financial"
+    culture_prior: 0.3
+    require_company_mention: true
+    require_workplace_keywords: true
+
+  stocks:
+    category: "financial"
+    culture_prior: 0.3
+    require_company_mention: true
+    require_workplace_keywords: true

@@ -1,0 +1,87 @@
+# ==============================================================================
+# Difference-in-Differences (DiD) Cohorts Specification
+# Comparing High-Restructuring (Treated) vs. Resilient (Control) Tech Firms
+# ==============================================================================
+
+did_study:
+  name: "2022-2026 Tech Restructuring & Layoffs Empirical Study"
+  
+  # Temporal Windows
+  pre_period:
+    start: "2021-07"
+    end: "2022-06"
+    label: "Pre-Restructuring Baseline"
+    
+  shock_period:
+    start: "2022-07"
+    end: "2023-06"
+    label: "Mass Layoffs Shock Phase"
+    
+  post_period:
+    start: "2023-07"
+    end: "2024-12"
+    label: "Post-Layoffs Operationalization"
+
+  extended_period:
+    start: "2025-01"
+    end: "2026-12"
+    label: "AI-Era Stabilization & Silent Layoffs"
+
+  # Cohort Definitions
+  cohorts:
+    treated:
+      description: "Firms executing large-scale workforce cuts (>= 1,000 roles or >= 5% of global staff)"
+      companies:
+        - name: "Amazon"
+          primary_cut_date: "2023-01-04"
+          estimated_cut: 27000
+        - name: "Google"
+          primary_cut_date: "2023-01-20"
+          estimated_cut: 12000
+        - name: "Meta"
+          primary_cut_date: "2022-11-09"
+          estimated_cut: 21000
+        - name: "Microsoft"
+          primary_cut_date: "2023-01-18"
+          estimated_cut: 10000
+        - name: "Salesforce"
+          primary_cut_date: "2023-01-04"
+          estimated_cut: 8000
+        - name: "Twitter"
+          primary_cut_date: "2022-11-04"
+          estimated_cut: 4500
+        - name: "Tesla"
+          primary_cut_date: "2022-06-03"
+          estimated_cut: 14000
+        - name: "IBM"
+          primary_cut_date: "2023-01-25"
+          estimated_cut: 3900
+        - name: "SAP"
+          primary_cut_date: "2023-01-26"
+          estimated_cut: 3000
+        - name: "Cisco"
+          primary_cut_date: "2024-02-09"
+          estimated_cut: 4000
+        - name: "Intel"
+          primary_cut_date: "2022-10-11"
+          estimated_cut: 15000
+
+    control:
+      description: "Resilient firms that avoided mass corporate layoffs during 2022-2023 peak"
+      companies:
+        - name: "Apple"
+          status: "Avoided mass tech layoffs via disciplined pandemic hiring"
+        - name: "Airbnb"
+          status: "Cut only ~30 recruiting staff in 2023"
+        - name: "Netflix"
+          status: "Limited initial cuts (~150 roles in 2022), no mass engineering waves"
+        - name: "Palantir"
+          status: "Maintained headcount stability (~2% minor rebalance in 2023)"
+        - name: "Uber"
+          status: "Only minor freight division adjustments (~150 roles), core engineering untouched"
+        - name: "LinkedIn"
+          status: "Minimal engineering impact relative to parent Microsoft"
+        - name: "Oracle"
+          status: "Targeted healthcare/cloud adjustments without broad engineering restructuring"
+        - name: "Adobe"
+          status: "Pledged no major layoffs through 2023"
