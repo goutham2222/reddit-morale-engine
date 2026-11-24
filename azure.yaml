@@ -1,0 +1,17 @@
+# Azure Developer CLI (azd) configuration for Azure Container Apps / Foundry Agent Service
+name: reddit-morale-engine
+metadata:
+  template: reddit-morale-engine@0.1.0
+services:
+  backend:
+    project: .
+    host: containerapp
+    docker:
+      path: ./Dockerfile.backend
+      context: .
+  frontend:
+    project: .
+    host: containerapp
+    docker:
+      path: ./Dockerfile.frontend
+      context: .
